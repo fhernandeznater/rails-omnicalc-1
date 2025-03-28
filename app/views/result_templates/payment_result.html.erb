@@ -7,7 +7,6 @@
   calculated_payment_float = (mpr * @principal)/(1-((1+mpr) ** -number_of_payments))
   @calculated_payment = calculated_payment_float.to_fs(:currency)
   @apr = format("%.4f%%", apr)
-  erb(:payment_results)
 %>
 
 <h1>Payment Results</h1>
