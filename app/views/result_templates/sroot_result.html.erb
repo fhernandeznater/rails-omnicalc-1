@@ -1,0 +1,28 @@
+<%
+  @num_to_root = params.fetch("root_number").to_f
+  @root_result = @num_to_root ** 0.5
+%>
+
+<h1>Square Root Results</h1>
+
+<dl>
+  <dt>
+    Number
+  </dt>
+  <dd>
+    <%= @num_to_root %>
+  </dd>
+
+
+  <dt>
+    Square
+  </dt>
+  <dd>
+    <%= @root_result%>
+  </dd>
+
+</dl>
+
+<a href="/square_root/new">
+  Calculate another square root
+</a>
