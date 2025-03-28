@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get("/", { :controller => "calculate", :action => "new_square"})
+
   get("/square/new", { :controller => "calculate", :action => "new_square" })
 
   get("/sroot/new", { :controller => "calculate", :action => "new_sroot" })
